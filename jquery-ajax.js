@@ -48,26 +48,7 @@ $('#spotify-button').click(function() {
     
     // Placera vårt svar på vår hemsida
     
-    // Demonstration av JSON (ett vanligt objekt i JavaScript):
-    var test_object = {
-  "display_name" : "Lilla Namo",
-  "external_urls" : {
-    "spotify" : "https://open.spotify.com/user/tuggareutangranser"
-  },
-  "followers" : {
-    "href" : null,
-    "total" : 5368
-  },
-  "href" : "https://api.spotify.com/v1/users/tuggareutangranser",
-  "id" : "tuggareutangranser",
-  "images" : [ {
-    "height" : null,
-    "url" : "https://profile-images.scdn.co/artists/default/d4f208d4d49c6f3e1363765597d10c4277f5b74f",
-    "width" : null
-  } ],
-  "type" : "user",
-  "uri" : "spotify:user:tuggareutangranser"
-};
+    // Demonstration av JSON (ett vanligt objekt i JavaScript);
 
 console.log(test_object.display_name)
     
@@ -79,7 +60,8 @@ console.log(test_object.display_name)
     // Formatet som informationen var på kallas JSON
     // JSON - JavaScript Object Notation
     
-    $('#spotify-response').text(data);
+    $('#spotify-response').text(responseBody.display_name);
+    // funkar förstås också att skriva text(data.display_name)
     
   })
   
