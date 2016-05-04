@@ -73,7 +73,7 @@ console.log(test_object.display_name)
     
     
     // Vi placerar det vi fick tillbaka i en variabel...
-    var response-body = data;
+    var responseBody = data;
     
     // ...det vi fick tillbaka är väldigt likt objekt i JavaScript
     // Formatet som informationen var på kallas JSON
