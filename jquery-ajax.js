@@ -49,7 +49,7 @@ $('#spotify-button').click(function() {
     // Placera vårt svar på vår hemsida
     
     // Demonstration av JSON (ett vanligt objekt i JavaScript):
-    var test-object = {
+    var test_object = {
   "display_name" : "Lilla Namo",
   "external_urls" : {
     "spotify" : "https://open.spotify.com/user/tuggareutangranser"
@@ -69,7 +69,7 @@ $('#spotify-button').click(function() {
   "uri" : "spotify:user:tuggareutangranser"
 };
 
-console.log(test-object.display_name)
+console.log(test_object.display_name)
     
     
     // Vi placerar det vi fick tillbaka i en variabel...
