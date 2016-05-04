@@ -36,3 +36,21 @@ $('#my-button').click(function() {
 )
 } 
 );
+
+
+// Klicka på Spotify-knappen
+$('#spotify-button').click(function() { 
+  
+  // Gör en request med jQuery mot Spotify's API
+  var url = "https://api.spotify.com/v1/users/tuggareutangranser";
+  
+  $.get(url, function(data, textStatus, jqXHR) {
+    
+    // Placera vårt svar på vår hemsida
+    $('#spotify-response').text(data);
+    
+  })
+  
+});
+
+
