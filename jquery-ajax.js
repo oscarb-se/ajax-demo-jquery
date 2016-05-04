@@ -46,12 +46,7 @@ $('#spotify-button').click(function() {
   
   $.get(url, function(data, textStatus, jqXHR) {
     
-    // Placera vårt svar på vår hemsida
-    
-    // Demonstration av JSON (ett vanligt objekt i JavaScript);
-
-console.log(test_object.display_name)
-    
+    // Placera svaret på vår hemsida
     
     // Vi placerar det vi fick tillbaka i en variabel...
     var responseBody = data;
