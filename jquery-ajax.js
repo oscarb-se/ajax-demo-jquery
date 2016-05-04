@@ -47,6 +47,38 @@ $('#spotify-button').click(function() {
   $.get(url, function(data, textStatus, jqXHR) {
     
     // Placera vårt svar på vår hemsida
+    
+    // Demonstration av JSON (ett vanligt objekt i JavaScript):
+    var test-object = {
+  "display_name" : "Lilla Namo",
+  "external_urls" : {
+    "spotify" : "https://open.spotify.com/user/tuggareutangranser"
+  },
+  "followers" : {
+    "href" : null,
+    "total" : 5368
+  },
+  "href" : "https://api.spotify.com/v1/users/tuggareutangranser",
+  "id" : "tuggareutangranser",
+  "images" : [ {
+    "height" : null,
+    "url" : "https://profile-images.scdn.co/artists/default/d4f208d4d49c6f3e1363765597d10c4277f5b74f",
+    "width" : null
+  } ],
+  "type" : "user",
+  "uri" : "spotify:user:tuggareutangranser"
+};
+
+console.log(test-object.display_name)
+    
+    
+    // Vi placerar det vi fick tillbaka i en variabel...
+    var response-body = data;
+    
+    // ...det vi fick tillbaka är väldigt likt objekt i JavaScript
+    // Formatet som informationen var på kallas JSON
+    // JSON - JavaScript Object Notation
+    
     $('#spotify-response').text(data);
     
   })
